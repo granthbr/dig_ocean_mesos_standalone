@@ -16,4 +16,4 @@ echo $IP |  tee /etc/mesos-slave/ip
 echo "cgroups/cpu,cgroups/mem" |  tee /etc/mesos-slave/isolation  
 echo zk://$IP:2181/mesos | tee /etc/mesos/zk  
 echo 1 |  tee /etc/zookeeper/conf/myid  
-reboot
+#reboot
