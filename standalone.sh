@@ -16,7 +16,7 @@ echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | su
 apt-get -y update 
 apt-get purge lxc-docker
 # removed the sudo.. should be unecessary
-apt-get -y install oracle-java8-installer linux-image-extra-$(uname -r)
+apt-get -y install oracle-java8-installer htop linux-image-extra-$(uname -r)
 apt-get -y install docker-engine marathon mesosphere  
 dpkg --configure -a 
 echo 'docker,mesos' > /etc/mesos-slave/containerizers
