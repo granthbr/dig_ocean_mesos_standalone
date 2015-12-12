@@ -17,7 +17,7 @@ apt-get -y update
 apt-get purge lxc-docker
 # removed the sudo.. should be unecessary
 apt-get -y install oracle-java8-installer linux-image-extra-$(uname -r)
-apt-get -y install docker-engine marathon mesos  
+apt-get -y install docker-engine marathon mesosphere  
 dpkg --configure -a 
 echo 'docker,mesos' > /etc/mesos-slave/containerizers
 echo '5mins' > /etc/mesos-slave/executor_registration_timeout 
