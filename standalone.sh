@@ -5,7 +5,7 @@ DISTRO=$(lsb_release -is | tr '[:upper:]' '[:lower:]')
 CODENAME=$(lsb_release -cs)  
 echo  "deb http://repos.mesosphere.io/ubuntu trusty main" | tee /etc/apt/sources.list.d/mesosphere.list  
 apt-get -y update 
-sudo apt-get -y install mesosphere  
+sudo apt-get -y install marathon mesosphere  
 sudo dpkg --configure -a  
 echo $IP |  tee /etc/mesos-master/hostname  
 echo $IP |  tee /etc/mesos-master/ip  
